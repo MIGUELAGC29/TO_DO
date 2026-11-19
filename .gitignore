@@ -1,0 +1,23 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Entorno virtual (uv)
+.venv/
+
+# Variables de entorno
+.env
+
+# Herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Editor / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
