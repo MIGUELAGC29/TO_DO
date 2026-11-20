@@ -86,7 +86,8 @@ Trabajar una etapa a la vez. No avanzar hasta que la etapa actual funcione y el 
 - Funciones cortas, con una sola responsabilidad.
 - Separar la lógica (tareas, fechas, estadísticas) de la interfaz (consola o web), para poder reutilizarla.
 - Manejar errores con excepciones específicas, no con `except:` vacío.
-- Usar un entorno virtual (`venv`) y mantener `requirements.txt` actualizado desde que haya dependencias.
+- Gestionar el proyecto con **uv**: las dependencias se agregan con `uv add <paquete>` (quedan en `pyproject.toml` y `uv.lock`) y el código se ejecuta con `uv run main.py`. uv crea y mantiene el entorno virtual `.venv` automáticamente; no se usa `requirements.txt` ni se activa el `venv` a mano.
+- Estructura simple: el código vive en la raíz del proyecto (`main.py` y módulos junto a él), sin carpeta `src/`.
 - Nunca subir al repositorio secretos, contraseñas ni la base de datos con datos reales (usar `.gitignore`).
 
 ---

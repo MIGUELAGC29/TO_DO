@@ -1,17 +1,10 @@
 [project]
 name = "proyecto-to-do"
 version = "0.1.0"
-description = "Add your description here"
+description = "Lista de tareas y seguimiento de disciplina en consola"
 readme = "README.md"
 authors = [
-    { name = "Miguel-MX1-Producto", email = "miguel.gonzalez@ggv.mx" }
+    { name = "MIGUELAGC29", email = "agc_miguel@hotmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = []
-
-[project.scripts]
-proyecto-to-do = "proyecto_to_do:main"
-
-[build-system]
-requires = ["uv_build>=0.13.9,<0.14.0"]
-build-backend = "uv_build"
